@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - MyPortfolio{% endblock %}
+
+{% block content %}
+<div class="welcome-section">
+    <h2>Welcome to MyPortfolio!</h2>
+    <p>This is the home page where you can explore different sections of my portfolio.</p>
+    <p>Feel free to navigate to the Biography, Photos, Project Portfolio, and Socials sections using the links in the
+        navigation bar.</p>
+
+    <h2>Contact Me</h2>
+    <p>Feel free to send me a message using the form below:</p>
+
+    <form method="post" action="{% url 'home' %}" id="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Photos - MyPortfolio{% endblock %}
+
+{% block content %}
+    <h2>Photo Gallery</h2>
+    <div class="photos-section">
+        {% for photo in photos %}
+            <div class="photo-card">
+                <h3>{{ photo.title }}</h3>
+                <img src="{{ photo.image_url }}" alt="{{ photo.title }}">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MyPortfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <script src="{% static 'js/theme-switch.js' %}"></script>
+</head>
+
+<body>
+    <header>
+        <h1>MyPortfolio</h1>
+        <button id="themeSwitch" onclick="toggleTheme()">Toggle Theme</button>
+        </form>
+    </header>
+    <body class="{{ request.session.theme }}"></body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'biography' %}">Biography</a></li>
+            <li><a href="{% url 'photos' %}">Photos</a></li>
+            <li><a href="{% url 'portfolio' %}">Project Portfolio</a></li>
+            <li><a href="{% url 'socials' %}">Socials</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+</body>
+
+</html>

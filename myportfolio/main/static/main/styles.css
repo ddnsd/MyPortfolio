@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+.biography {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .biography {
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.biography h2,
+.biography h3,
+.biography p,
+.biography ul,
+.biography li {
+    /* Text color for the content inside the biography section */
+    color: inherit;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode form {
+    background-color: #333;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.dark-mode form label {
+    color: #fff;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-theme form button {
+    background-color: #333;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.dark-mode form button:hover {
+    background-color: #555;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #333;
+}
+
+.project-card p {
+    color: #777;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.photos-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-card {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card h3 {
+    color: #333;
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.socials-section {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-section img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Social Media - MyPortfolio{% endblock %}
+
+{% block content %}
+<h2>Social Media Links</h2>
+<div class="socials-section">
+    {% load static %}
+    {% for social_link in social_links %}
+    <a href="{{ social_link.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{% static 'main/images/' %}{{ social_link.platform }}.png" alt="{{ social_link.platform }}">
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
